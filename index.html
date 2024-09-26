@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Електричний Калькулятор</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrapper">
+    <div class="input-container">
+        <h1 class="calc-title">Електричний Калькулятор</h1>
+        <p class="calc-desc">Веб калькулятор для порівняння надійності одноколової та двоколової систем електропередачі та розрахунку збитків від перерв електропостачання у разі застосування однотрансформаторної ГТП.</p>
+        <input type="number" id="failure-rate" placeholder="Частота відмов">
+        <input type="number" id="recovery-time" placeholder="Середній час відновлення">
+        <input type="number" id="planned-downtime" placeholder="Середній час планового простою">
+        <input type="number" id="interruption-cost" placeholder="Питомі збитки переривання">
+        <input type="number" id="accident-cost" placeholder="Питомі аварійні збитки">
+        <button id="compute-btn">Розрахувати</button>
+    </div>
+    <div class="output-container">
+        <div class="output-box">
+            <div id="output" class="output"></div>
+        </div>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
